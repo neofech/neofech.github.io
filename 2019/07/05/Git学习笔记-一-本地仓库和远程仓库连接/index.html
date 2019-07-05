@@ -6,15 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 语言 | Neofech的博客</title>
+  <title>Git学习笔记(一):本地仓库和远程仓库连接 | Neofech的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Neofech的博客">
-<meta property="og:url" content="http://yoursite.com/tags/语言/index.html">
+  <meta name="description" content="本文主要介绍如何将你本地的仓库和github/gitee连接，在gitee/github当中可以绑定多个本地仓库。  绑定的步骤主要有三步1.绑定git账户2.绑定git电子邮箱3.添加ssh公钥">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git学习笔记(一):本地仓库和远程仓库连接">
+<meta property="og:url" content="http://yoursite.com/2019/07/05/Git学习笔记-一-本地仓库和远程仓库连接/index.html">
 <meta property="og:site_name" content="Neofech的博客">
+<meta property="og:description" content="本文主要介绍如何将你本地的仓库和github/gitee连接，在gitee/github当中可以绑定多个本地仓库。  绑定的步骤主要有三步1.绑定git账户2.绑定git电子邮箱3.添加ssh公钥">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/17628426-8b8bcb953d87f827.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/17628426-38db2d1a5ee717e3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/17628426-d72cf04e559bdab3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/17628426-aa22e3a3f53f1760.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/17628426-7dd84fc1f29bf9b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-07-05T03:36:48.369Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Neofech的博客">
+<meta name="twitter:title" content="Git学习笔记(一):本地仓库和远程仓库连接">
+<meta name="twitter:description" content="本文主要介绍如何将你本地的仓库和github/gitee连接，在gitee/github当中可以绑定多个本地仓库。  绑定的步骤主要有三步1.绑定git账户2.绑定git电子邮箱3.添加ssh公钥">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/17628426-8b8bcb953d87f827.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="Neofech的博客" type="application/atom+xml">
   
@@ -146,64 +157,199 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Git学习笔记-一-本地仓库和远程仓库连接" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/01/Markdown介绍及使用教程/" class="archive-article-date">
-  	<time datetime="2019-05-01T10:02:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-01</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/01/Markdown介绍及使用教程/">Markdown介绍及使用教程</a>
+    <h1 class="article-title" itemprop="name">
+      Git学习笔记(一):本地仓库和远程仓库连接
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/07/05/Git学习笔记-一-本地仓库和远程仓库连接/" class="archive-article-date">
+  	<time datetime="2019-07-05T03:35:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>本文主要介绍如何将你本地的仓库和github/gitee连接，在gitee/github当中可以绑定多个本地仓库。</p>
+</blockquote>
+<p>绑定的步骤主要有三步<br><strong>1.绑定git账户</strong><br><strong>2.绑定git电子邮箱</strong><br><strong>3.添加ssh公钥</strong></p>
+<a id="more"></a>
+<p><strong>[注:]</strong>想要绑定本地仓库，电脑需要安装git，git的安装十分简单，只需要去官网下载安装包，然后默认安装即可！<a href="https://git-scm.com/" target="_blank" rel="noopener">git官网</a></p>
+<p>安装完成后，在电脑桌面单击右键，选择 <strong>Git Bash Here</strong> 即可打开git的命令行窗口：<br><img src="https://upload-images.jianshu.io/upload_images/17628426-8b8bcb953d87f827.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="git 命令行窗口"></p>
+<p><strong>[注:]</strong>本教程中有gitee和github的教程，这两个的操作方法大概一致，在绑定SSH公钥的方法上是一致的。</p>
+<p>gitee，即码云，有中国版github之称。用起来很方便，可以免费创建私有仓库，想了解可以自行进入官网，送上连接：<a href="https://gitee.com/" target="_blank" rel="noopener">码云官网</a></p>
+<p>github，基本大多数程序员都会用到的一个很强大的代码托管仓库，由于是国外的，所以可能会比较慢，个人还是比较喜欢使用github的，但是值得注意的是，github是英文的哦！如果有人想了解，可以自行了解，这里送上链接：<a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a></p>
+<p>下面开始正式介绍如何操作</p>
+<p>####1.初始化用户名和邮箱<br>使用以下命令就可以绑定用户名和邮箱<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br></pre></td></tr></table></figure></p>
+<p>该命令用来初始化用户名，这里的username需改为自己的用户名。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;email&quot;</span><br></pre></td></tr></table></figure></p>
+<p>该命令用来初始化邮箱，这里的email需改为自己的邮箱。<br><img src="https://upload-images.jianshu.io/upload_images/17628426-38db2d1a5ee717e3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="初始化用户名和邮箱"></p>
+<p>图中的单引号中中需要输入自己的用户名和邮箱</p>
+<p>####2.添加ssh公钥<br><strong>（1）查看本地是否有公钥文件</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></p>
+<p>通过此命令如果能看到一个以<figure class="highlight plain"><figcaption><span>RSA```开头长的字符串，此时在本地生成的秘钥```~/.ssh/id_rsa ```和公钥 ```~/.ssh/id_rsa.pub```，可以跳过SSH-Keygen 的生成</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">**（2）生成新的SSH Key，输入如下命令**</span><br></pre></td></tr></table></figure></p>
+<p>ssh-keygen -t rsa -C “email”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">此处的email需要改为自己的邮箱。连续回车之后，就可以正确生成SSH Key。</span><br><span class="line">![出现如图内容，说明生成成功](https://upload-images.jianshu.io/upload_images/17628426-0c88707b4dcd412f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</span><br><span class="line"></span><br><span class="line">**（3）查看ssh公钥，输入如下命令：**</span><br></pre></td></tr></table></figure></p>
+<p>cat ~/.ssh/id_rsa.pub<br><code>`</code><br><img src="https://upload-images.jianshu.io/upload_images/17628426-d72cf04e559bdab3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="查看生成出的ssh公钥"></p>
+<p>选中生成出来的ssh公钥，鼠标右键选择 copy</p>
+<p><strong>（4）gitee添加ssh公钥</strong><br> 打开自己的gitee主页<br><img src="https://upload-images.jianshu.io/upload_images/17628426-aa22e3a3f53f1760.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="码云设置页"></p>
+<p>① 打开个人主页—-设置<br>② 在左侧选择—-SSH公钥<br>③ 在标题处，给这个公钥起一个名字<br>④ 在公钥处，粘贴生成的公钥<br>点击确定就可以完成了。</p>
+<p><strong>（5）github添加ssh公钥</strong><br>打开自己的github主页，在<code>Setting</code>中找到<code>SSH and GPG keys</code>，点击<code>New SSH Key</code>，输入<code>Title</code>，然后在<code>Key</code>中粘贴生成的公钥，最后点击<code>Add SSH Key</code>就完成了。<br><img src="https://upload-images.jianshu.io/upload_images/17628426-7dd84fc1f29bf9b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="GitHub设置页"></p>
+<p>至此，gitee和本地仓库连接成功！</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语言</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Markdown</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/05/Git学习笔记-一-本地仓库和远程仓库连接/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/07/05/Git学习笔记-二-上传你的第一个项目/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Git学习笔记(二):上传你的第一个项目
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2019/07/05/阿里云服务器安装jdk1-8，Tomcat9-0，MySQL57/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">阿里云服务器安装jdk1.8，Tomcat9.0，MySQL57</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -226,9 +372,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
@@ -317,11 +463,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">语言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
